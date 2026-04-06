@@ -1,0 +1,60 @@
+[
+  {
+    "route": "/",
+    "firstLoadUncompressedJsBytes": 746235,
+    "firstLoadChunkPaths": [
+      "dist/static/chunks/01xlw8hd842-c.js",
+      "dist/static/chunks/00-csyj9a6t-x.js",
+      "dist/static/chunks/17kp9zi0k-fn4.js",
+      "dist/static/chunks/0_nl6wzap-b.p.js",
+      "dist/static/chunks/0ht900cau6_ur.js",
+      "dist/static/chunks/0dgq26a5_oy.a.js",
+      "dist/static/chunks/0bogtdbh.dcu1.js",
+      "dist/static/chunks/0257pdz1-imal.js",
+      "dist/static/chunks/turbopack-0c_joe9d6pxq3.js"
+    ]
+  },
+  {
+    "route": "/signup",
+    "firstLoadUncompressedJsBytes": 677173,
+    "firstLoadChunkPaths": [
+      "dist/static/chunks/01xlw8hd842-c.js",
+      "dist/static/chunks/00-csyj9a6t-x.js",
+      "dist/static/chunks/0pcwojpgx4~re.js",
+      "dist/static/chunks/0_nl6wzap-b.p.js",
+      "dist/static/chunks/0ht900cau6_ur.js",
+      "dist/static/chunks/0dgq26a5_oy.a.js",
+      "dist/static/chunks/0bogtdbh.dcu1.js",
+      "dist/static/chunks/0257pdz1-imal.js",
+      "dist/static/chunks/turbopack-0c_joe9d6pxq3.js"
+    ]
+  },
+  {
+    "route": "/login",
+    "firstLoadUncompressedJsBytes": 676103,
+    "firstLoadChunkPaths": [
+      "dist/static/chunks/01xlw8hd842-c.js",
+      "dist/static/chunks/00-csyj9a6t-x.js",
+      "dist/static/chunks/0nbrbn_.nknvv.js",
+      "dist/static/chunks/0_nl6wzap-b.p.js",
+      "dist/static/chunks/0ht900cau6_ur.js",
+      "dist/static/chunks/0dgq26a5_oy.a.js",
+      "dist/static/chunks/0bogtdbh.dcu1.js",
+      "dist/static/chunks/0257pdz1-imal.js",
+      "dist/static/chunks/turbopack-0c_joe9d6pxq3.js"
+    ]
+  },
+  {
+    "route": "/_not-found",
+    "firstLoadUncompressedJsBytes": 513849,
+    "firstLoadChunkPaths": [
+      "dist/static/chunks/01xlw8hd842-c.js",
+      "dist/static/chunks/00-csyj9a6t-x.js",
+      "dist/static/chunks/0ht900cau6_ur.js",
+      "dist/static/chunks/0dgq26a5_oy.a.js",
+      "dist/static/chunks/0bogtdbh.dcu1.js",
+      "dist/static/chunks/0257pdz1-imal.js",
+      "dist/static/chunks/turbopack-0c_joe9d6pxq3.js"
+    ]
+  }
+]
