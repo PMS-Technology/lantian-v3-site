@@ -282,7 +282,7 @@ export default function Features() {
                 </div>
                 <div className="flex min-h-[300px] grow items-start justify-center select-none">
                   <h3 className="mt-8 text-center text-5xl leading-[100%] font-semibold sm:leading-normal lg:mt-12 lg:text-6xl">
-                    <span className='bg-background relative mt-3 inline-block w-fit rounded-md border px-1.5 py-0.5 before:absolute before:top-0 before:left-0 before:z-10 before:h-full before:w-full before:bg-[url("/noise.gif")] before:opacity-[0.09] before:content-[""]'>
+                    <span className='bg-background relative mt-3 inline-block w-fit rounded-md border px-1.5 py-0.5'>
                       <ScrambleHover
                          text="全球"
                         scrambleSpeed={70}
