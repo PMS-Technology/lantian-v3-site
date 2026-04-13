@@ -81,9 +81,9 @@ export default function Hero() {
 
               {/* Get started button */}
               <div className="flex items-center justify-center">
-                 <a href="https://qm.qq.com/q/wpkHW2ZOSI" target="_blank" rel="noopener noreferrer">
-                  <div className="group cursor-pointer border border-border bg-card gap-2 h-[60px] flex items-center p-[10px] rounded-full">
-                    <div className="border border-border bg-primary h-[40px] rounded-full flex items-center justify-center text-primary-foreground">
+                 <a href="https://qm.qq.com/q/wpkHW2ZOSI" target="_blank" rel="noopener noreferrer" aria-label="加入蓝天云官方QQ群">
+                  <div className="group cursor-pointer border border-border bg-card gap-2 h-15 flex items-center p-2.5 rounded-full">
+                    <div className="border border-border bg-primary h-10 rounded-full flex items-center justify-center text-primary-foreground">
                       <p className="font-medium tracking-tight mr-3 ml-3 flex items-center gap-2 justify-center text-base">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +104,7 @@ export default function Hero() {
                         从加入QQ群开始
                       </p>
                     </div>
-                    <div className="text-muted-foreground group-hover:ml-4 ease-in-out transition-all size-[24px] flex items-center justify-center rounded-full border-2 border-border">
+                    <div className="text-muted-foreground group-hover:ml-4 ease-in-out transition-all size-6 flex items-center justify-center rounded-full border-2 border-border">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="14"
@@ -156,6 +156,10 @@ export default function Hero() {
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tailwind_CSS_Logo.svg-6xxjTKleFAC9zoBBGesuy0rIESAcXA.png"
                     alt="Tailwind CSS"
                     className="h-8 object-contain"
+                    loading="lazy"
+                    decoding="async"
+                    width="32"
+                    height="32"
                   />
                 </div>
 

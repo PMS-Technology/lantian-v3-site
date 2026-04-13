@@ -4,7 +4,7 @@ export function NewReleasePromo() {
   return (
     <section className="mt-12 w-full">
       <div className="mx-auto max-w-4xl rounded-[40px] border border-black/5 dark:border-white/20 p-2 shadow-sm">
-        <div className="relative mx-auto h-[400px] max-w-4xl overflow-hidden rounded-[38px] border border-black/5 dark:border-white/20 bg-primary p-2 shadow-sm">
+        <div className="relative mx-auto h-100 max-w-4xl overflow-hidden rounded-[38px] border border-black/5 dark:border-white/20 bg-primary p-2 shadow-sm">
           {/* Subtle radial glow from center */}
           <div
             className="absolute inset-0 z-0"
@@ -41,9 +41,9 @@ export function NewReleasePromo() {
               </svg>
               <div className="flex items-center justify-center">
                  <a href="http://panel.lantian.pro/" target="_blank" rel="noopener noreferrer">
-                  <div className="group border-border bg-secondary/70 flex h-[64px] cursor-pointer items-center gap-2 rounded-full border p-[11px] mt-10">
-                    <div className="border-border bg-primary flex h-[43px] items-center justify-center rounded-full border">
-                      <p className="mr-3 ml-2 flex items-center justify-center gap-2 font-medium tracking-tight text-white">
+                  <div className="group border-border bg-secondary/70 flex h-16 cursor-pointer items-center gap-2 rounded-full border p-2.75 mt-10">
+                    <div className="border-border bg-white flex h-10.75 items-center justify-center rounded-full border">
+                      <p className="mr-3 ml-2 flex items-center justify-center gap-2 font-medium tracking-tight text-primary">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -64,7 +64,7 @@ export function NewReleasePromo() {
                          前往面板控制台
                       </p>
                     </div>
-                    <div className="border-border flex size-[26px] items-center justify-center rounded-full border-2 transition-all ease-in-out group-hover:ml-2">
+                    <div className="border-border flex size-6.5 items-center justify-center rounded-full border-2 transition-all ease-in-out group-hover:ml-2">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="18"
@@ -89,7 +89,7 @@ export function NewReleasePromo() {
 
             {/* Stroked text wordmark */}
             <div
-              className="absolute inset-x-0 mt-[120px] text-center text-[100px] font-semibold text-transparent sm:mt-[30px] sm:text-[190px] pointer-events-none"
+              className="absolute inset-x-0 mt-30 text-center text-[100px] font-semibold text-transparent sm:mt-7.5 sm:text-[190px] pointer-events-none"
               style={{
                 WebkitTextStroke: "1px currentColor",
                 color: "transparent",
@@ -99,7 +99,7 @@ export function NewReleasePromo() {
                lantian.pro
             </div>
             <div
-              className="absolute inset-x-0 mt-[120px] text-center text-[100px] font-semibold text-primary sm:mt-[30px] sm:text-[190px] pointer-events-none"
+              className="absolute inset-x-0 mt-30 text-center text-[100px] font-semibold text-primary sm:mt-7.5 sm:text-[190px] pointer-events-none"
               aria-hidden="true"
             >
                lantian.pro
