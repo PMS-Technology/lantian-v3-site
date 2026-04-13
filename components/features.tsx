@@ -42,7 +42,7 @@ export default function Features() {
   return (
     <section id="features" className="text-foreground relative overflow-hidden py-12 sm:py-24 md:py-32">
       <div className="bg-primary absolute -top-10 left-1/2 h-16 w-44 -translate-x-1/2 rounded-full opacity-40 blur-3xl select-none"></div>
-      <div className="via-primary/50 absolute top-0 left-1/2 h-px w-3/5 -translate-x-1/2 bg-gradient-to-r from-transparent to-transparent transition-all ease-in-out"></div>
+      <div className="via-primary/50 absolute top-0 left-1/2 h-px w-3/5 -translate-x-1/2 bg-linear-to-r from-transparent to-transparent transition-all ease-in-out"></div>
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 50 }}
@@ -52,7 +52,7 @@ export default function Features() {
       >
         <h2
           className={cn(
-            "via-foreground mb-8 bg-gradient-to-b from-zinc-800 to-zinc-700 bg-clip-text text-center text-4xl font-semibold tracking-tighter text-transparent md:text-[54px] md:leading-[60px]",
+            "via-foreground mb-8 bg-linear-to-b from-zinc-800 to-zinc-700 bg-clip-text text-center text-4xl font-semibold tracking-tighter text-transparent md:text-[54px] md:leading-15",
             geist.className,
           )}
         >
@@ -87,14 +87,14 @@ export default function Features() {
                 <div className="flex flex-col gap-4">
                   <h3 className="text-2xl leading-none font-semibold tracking-tight">安全面板与环境隔离</h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
-                    <p className="max-w-[460px]">
+                    <p className="max-w-115">
                        基于 Pyrodactyl 开源面板搭建，自动生成复杂密码，并通过 Docker 隔离每个实例，降低恶意请求与暴力破解风险。
                     </p>
                   </div>
                 </div>
                 <div className="pointer-events-none flex grow items-center justify-center select-none relative">
                   <div
-                    className="relative w-full h-[400px] rounded-xl overflow-hidden"
+                    className="relative w-full h-100 rounded-xl overflow-hidden"
                     style={{ borderRadius: "20px" }}
                   >
                     {/* Background Image */}
@@ -103,6 +103,10 @@ export default function Features() {
                         src="https://framerusercontent.com/images/UjqUIiBHmIcSH9vos9HlG2BF4bo.png"
                         alt="Arrow-CoreExchange"
                         className="w-full h-full object-cover rounded-xl"
+                        loading="lazy"
+                        decoding="async"
+                        width="400"
+                        height="300"
                       />
                     </div>
 
@@ -196,6 +200,10 @@ export default function Features() {
                             src="https://framerusercontent.com/images/q43ivjLz67lXhWf6TKfLIh0FY.png"
                             alt="Logo"
                             className="w-full h-full object-cover"
+                            loading="lazy"
+                            decoding="async"
+                            width="64"
+                            height="64"
                           />
                         </motion.div>
 
@@ -275,12 +283,12 @@ export default function Features() {
                 <div className="flex flex-col gap-4">
                   <h3 className="text-2xl leading-none font-semibold tracking-tight">快速创建与快速联机</h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
-                    <p className="max-w-[460px]">
+                    <p className="max-w-115">
                        注册后约 1 分钟即可开通服务器，约 5 分钟即可邀请好友联机；根据控制台提供的地址即可直接开始。
                     </p>
                   </div>
                 </div>
-                <div className="flex min-h-[300px] grow items-start justify-center select-none">
+                <div className="flex min-h-75 items-start justify-center select-none">
                   <h3 className="mt-8 text-center text-5xl leading-[100%] font-semibold sm:leading-normal lg:mt-12 lg:text-6xl">
                     <span className='bg-background relative mt-3 inline-block w-fit rounded-md border px-1.5 py-0.5'>
                       <ScrambleHover
@@ -288,7 +296,7 @@ export default function Features() {
                         scrambleSpeed={70}
                         maxIterations={20}
                         useOriginalCharsOnly={false}
-                        className="cursor-pointer bg-gradient-to-t from-[#e78a53] to-[#e78a53] bg-clip-text text-transparent"
+                        className="cursor-pointer bg-linear-to-t from-[#e78a53] to-[#e78a53] bg-clip-text text-transparent"
                         isHovering={isHovering}
                         setIsHovering={setIsHovering}
                         characters="abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+-=[]{}|;':\,./<>?"
@@ -296,10 +304,10 @@ export default function Features() {
                     </span>
                   </h3>
                   <div className="absolute top-64 z-10 flex items-center justify-center">
-                    <div className="w-[400px] h-[400px]">
+                    <div className="w-100 h-100">
                       <Suspense
                         fallback={
-                          <div className="bg-secondary/20 h-[400px] w-[400px] animate-pulse rounded-full"></div>
+                          <div className="bg-secondary/20 h-100 w-100 animate-pulse rounded-full"></div>
                         }
                       >
                         <Earth baseColor={baseColor} markerColor={[0, 0, 0]} glowColor={glowColor} dark={dark} />
@@ -307,8 +315,8 @@ export default function Features() {
                     </div>
                   </div>
                   <div className="absolute top-1/2 w-full translate-y-20 scale-x-[1.2] opacity-70 transition-all duration-1000 group-hover:translate-y-8 group-hover:opacity-100">
-                    <div className="from-primary/50 to-primary/0 absolute left-1/2 h-[256px] w-[60%] -translate-x-1/2 scale-[2.5] rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-[512px] dark:opacity-100"></div>
-                    <div className="from-primary/30 to-primary/0 absolute left-1/2 h-[128px] w-[40%] -translate-x-1/2 scale-200 rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-[256px] dark:opacity-100"></div>
+                    <div className="from-primary/50 to-primary/0 absolute left-1/2 h-64 w-[60%] -translate-x-1/2 scale-[2.5] rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-128 dark:opacity-100"></div>
+                    <div className="from-primary/30 to-primary/0 absolute left-1/2 h-32 w-[40%] -translate-x-1/2 scale-200 rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-64 dark:opacity-100"></div>
                   </div>
                 </div>
               </motion.div>
@@ -331,17 +339,17 @@ export default function Features() {
                 <div className="flex flex-col gap-4">
                   <h3 className="text-2xl leading-none font-semibold tracking-tight">多元环境与 LeviLamina 支持</h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
-                    <p className="max-w-[460px]">
+                    <p className="max-w-115">
                        兼容多种 Java 环境，并具备自研能力在封闭环境中安全运行 LeviLamina，尽可能降低开服时的环境影响。
                     </p>
                   </div>
                 </div>
-                <div className="flex grow items-center justify-center select-none relative min-h-[300px] p-4">
+                <div className="flex grow items-center justify-center select-none relative min-h-75 p-4">
                   <div className="w-full max-w-lg">
-                    <div className="relative rounded-2xl border border-white/10 bg-black/20 dark:bg-white/5 backdrop-blur-sm">
+                    <div className="relative rounded-2xl border border-white/20 bg-black/40 dark:bg-white/10 backdrop-blur-sm">
                       <div className="p-4">
                         <textarea
-                          className="w-full min-h-[100px] bg-transparent border-none text-white placeholder:text-white/50 resize-none focus:outline-none text-base leading-relaxed"
+                          className="w-full min-h-25 bg-transparent border-none text-white placeholder:text-white/50 resize-none focus:outline-none text-base leading-relaxed"
                            placeholder="搜索支持的游戏或环境..."
                           value={inputValue}
                           onChange={(e) => setInputValue(e.target.value)}
@@ -350,7 +358,7 @@ export default function Features() {
                       </div>
                       <div className="flex items-center justify-between px-4 pb-4">
                         <div className="flex items-center gap-3">
-                          <button className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+                          <button aria-label="复制链接" className="p-2 rounded-full bg-white/20 hover:bg-white/30 transition-colors">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -361,7 +369,7 @@ export default function Features() {
                               strokeWidth="2"
                               strokeLinecap="round"
                               strokeLinejoin="round"
-                              className="text-white/70"
+                              className="text-white/90"
                             >
                               <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
                             </svg>
@@ -385,7 +393,7 @@ export default function Features() {
                              查询
                           </button>
                         </div>
-                        <button className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+                        <button aria-label="分享" className="p-2 rounded-full bg-white/20 hover:bg-white/30 transition-colors">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -396,7 +404,7 @@ export default function Features() {
                             strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            className="text-white/70"
+                            className="text-white/90"
                           >
                             <path d="m22 2-7 20-4-9-9-4Z"></path>
                             <path d="M22 2 11 13"></path>
@@ -427,19 +435,23 @@ export default function Features() {
                 <div className="flex flex-col gap-4">
                   <h3 className="text-2xl leading-none font-semibold tracking-tight">区域网络与低延迟体验</h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
-                    <p className="max-w-[460px]">
+                    <p className="max-w-115">
                        节点覆盖枣庄、十堰等区域，依托骨干网络提供全国优化线路，帮助你获得更稳定、低延迟的联机体验。
                     </p>
                   </div>
                 </div>
-                <div className="flex grow items-center justify-center select-none relative min-h-[300px] p-4">
+                <div className="flex grow items-center justify-center select-none relative min-h-75 p-4">
                   <div className="relative w-full max-w-sm">
                     <img
                       src="/modern-grid-layout.png"
-                       alt="动态布局示例"
+                      alt="动态布局示例"
                       className="w-full h-auto rounded-lg shadow-lg"
+                      loading="lazy"
+                      decoding="async"
+                      width="400"
+                      height="300"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+                    <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent rounded-lg"></div>
                   </div>
                 </div>
               </motion.div>

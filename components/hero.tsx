@@ -1,17 +1,17 @@
 "use client"
 
-import { PixelCard } from "../ui/pixelcards"
+import { PixelCard } from "@/components/ui/pixelcards"
 import { geist } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { CloudLightning, MoveRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import HomeBadge from "../ui/home-badge"
-import { Beam } from "../ui/gridbeam"
+import HomeBadge from "@/components/ui/home-badge"
+import { Beam } from "@/components/ui/gridbeam"
 import { Sparkles } from "lucide-react"
 import { useEffect, useState } from "react"
-import { CardHoverEffect } from "../ui/pulse-card"
+import { CardHoverEffect } from "@/components/ui/pulse-card"
 import { motion } from "framer-motion"
-import Link from "next/link"
+import { Link } from "react-router-dom"
 
 const PIXEL_SCRIPT_URL =
   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pixel-RKkUKH2OXWk9adKbDnozmndkwseTQh.js"
@@ -93,7 +93,9 @@ export default function Hero() {
         width={300}
         draggable={false}
         height={300}
-        className="absolute top-0 right-0 z-[2] object-cover object-center select-none"
+        loading="lazy"
+        decoding="async"
+        className="absolute top-0 right-0 z-2 object-cover object-center select-none"
       />
       <img
         src="/vector2.png"
@@ -101,7 +103,9 @@ export default function Hero() {
         width={300}
         height={300}
         draggable={false}
-        className="absolute top-0 left-0 z-[2] object-cover object-center select-none"
+        loading="lazy"
+        decoding="async"
+        className="absolute top-0 left-0 z-2 object-cover object-center select-none"
       />
       <img
         src="/vector5.webp"
@@ -109,7 +113,9 @@ export default function Hero() {
         width={300}
         draggable={false}
         height={300}
-        className="absolute bottom-0 -left-44 z-[2] -rotate-90 object-cover object-center select-none"
+        loading="lazy"
+        decoding="async"
+        className="absolute bottom-0 -left-44 z-2rotate-90 object-cover object-center select-none"
       />
       <img
         src="/vector6.png"
@@ -117,9 +123,11 @@ export default function Hero() {
         width={300}
         draggable={false}
         height={300}
-        className="absolute -right-44 bottom-0 z-[2] rotate-90 object-cover object-center select-none"
+        loading="lazy"
+        decoding="async"
+        className="absolute -right-44 bottom-0 z-2 rotate-90 object-cover object-center select-none"
       />
-      <div className="container mx-auto px-4 2xl:max-w-[1400px]">
+      <div className="container mx-auto px-4 2xl:max-w-350">
         <motion.div
           className="flex justify-center"
           initial={{ opacity: 0, y: 50 }}
@@ -132,7 +140,7 @@ export default function Hero() {
           <Beam />
           <motion.h1
             className={cn(
-              "from-foreground/60 via-foreground to-foreground/60 dark:from-muted-foreground/55 dark:via-foreground dark:to-muted-foreground/55 max-w-5xl bg-gradient-to-r bg-clip-text text-center text-4xl font-semibold tracking-tighter text-transparent sm:text-5xl xl:text-6xl/none",
+              "from-foreground/60 via-foreground to-foreground/60 dark:from-muted-foreground/55 dark:via-foreground dark:to-muted-foreground/55 max-w-5xl bg-linear-to-r bg-clip-text text-center text-4xl font-semibold tracking-tighter text-transparent sm:text-5xl xl:text-6xl/none",
               geist.className,
             )}
             initial={{ opacity: 0, y: 50 }}
@@ -166,12 +174,12 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, delay: 0.4 }}
         >
-          <Link prefetch={false} href="/docs/introduction">
-            <Button className="bg-gradient-to-b from-rose-500 to-rose-700 text-sm text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]">
+          <Link to="/docs/introduction">
+            <Button className="bg-linear-to-b from-rose-500 to-rose-700 text-sm text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]">
               Get started
             </Button>
           </Link>
-          <Link prefetch={false} href="/about">
+          <Link to="/about">
             <Button variant={"secondary"}>
               About <MoveRight className="ml-2 h-4 w-4" />
             </Button>
@@ -237,7 +245,7 @@ export default function Hero() {
           <main className="bg-background dark:bg-background m-auto flex w-full flex-col items-center justify-center gap-8 p-6 text-left text-gray-800 sm:flex-row xl:p-4 dark:text-[#e3e3e3]">
             {isScriptLoaded && (
               <motion.div
-                className="bg-background absolute top-[45%] left-28 z-50 hidden h-[370px] w-[300px] xl:block"
+                className="bg-background absolute top-[45%] left-28 z-50 hidden h-92.5 w-75lock"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.75, delay: 0.5 }}
@@ -255,7 +263,7 @@ export default function Hero() {
             )}
             {isScriptLoaded && (
               <motion.div
-                className="bg-background absolute top-[45%] right-28 z-50 hidden h-[370px] w-[300px] xl:block"
+                className="bg-background absolute top-[45%] right-28 z-50 hidden h-92.5[300px] xl:block"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.75, delay: 0.5 }}
