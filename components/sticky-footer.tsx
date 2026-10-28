@@ -12,7 +12,7 @@ export function StickyFooter() {
       { label: "面板控制台", href: "https://panel.lantian.pro/" },
     ],
     [
-      { label: "QQ 群", href: "https://qm.qq.com/q/BCUiiIQr5Y" },
+      { label: "QQ 群", href: "https://qm.qq.com/q/czEUPaMnao" },
       { label: "ByteFRP", href: "https://frp.bytedesktop.com/" },
       { label: "最新新闻", href: "https://next.lantian.pro/news" },
     ],
