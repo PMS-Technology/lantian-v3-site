@@ -81,7 +81,7 @@ export default function Hero() {
 
               {/* Get started button */}
               <div className="flex items-center justify-center">
-                 <a href="https://qm.qq.com/q/wpkHW2ZOSI" target="_blank" rel="noopener noreferrer" aria-label="加入蓝天云官方QQ群">
+                 <a href="https://qm.qq.com/q/czEUPaMnao" target="_blank" rel="noopener noreferrer" aria-label="加入蓝天云官方QQ群">
                   <div className="group cursor-pointer border border-border bg-card gap-2 h-15 flex items-center p-2.5 rounded-full">
                     <div className="border border-border bg-primary h-10 rounded-full flex items-center justify-center text-primary-foreground">
                       <p className="font-medium tracking-tight mr-3 ml-3 flex items-center gap-2 justify-center text-base">
